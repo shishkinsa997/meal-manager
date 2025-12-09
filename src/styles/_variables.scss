@@ -1,0 +1,31 @@
+
+$color-primary: #94d6e8;
+$color-light: #e8e8e8;
+$color-dark: #39393A;
+$color-black: #222;
+$color-white: #fff;
+$color-secondary: #fd9282;
+$color-primary-light: #3da1bd;
+
+$mobile_s: 380px;
+$mobile_m: 560px;
+$mobile_l: 670px;
+$tablet_s: 768px;
+$tablet_m: 820px;
+$tablet_l: 880px;
+$laptop_s: 1000px;
+$laptop_m: 1120px;
+$laptop_l: 1280px;
+$desktop: 1440px;
+
+$breakpoints: (
+  mobile_s: 380px,
+  mobile_m: 480px,
+  mobile_l: 380px,
+  tablet_s: 768px,
+  tablet_m: 768px,
+  tablet_l: 900px,
+  laptop: 1024px,
+  widelaptop: 1280px,
+  desktop: 1440px,
+);

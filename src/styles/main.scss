@@ -1,0 +1,62 @@
+@use "_variables.scss" as v;
+@use "_mixins.scss" as *;
+
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../assets/fonts/Outfit.woff") format("woff2");
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body {
+  @include outfit;
+  min-height: 100dvh;
+  color: v.$color-light;
+
+  [data-theme="light"] & {
+    color: v.$color-black;
+  }
+}
+
+#app {
+  @include container;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+main {
+  @include flex-column;
+  justify-content: start;
+  height: 100dvh;
+  gap: 2rem;
+}
+
+[hidden] {
+  display: none;
+}

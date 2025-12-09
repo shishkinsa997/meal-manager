@@ -1,0 +1,62 @@
+@use "_variables.scss" as v;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@mixin outfit {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+@mixin modal {
+  position: fixed;
+  @include flex-center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  padding: 1rem;
+
+  .modal-container {
+    @include flex-column();
+    min-width: 25rem;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 1rem;
+  }
+}
+
+@mixin no-scroll {
+  overflow: auto;
+  &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      display: none;
+  }
+
+  &::-webkit-scrollbar {
+      display: none;
+  }
+}
