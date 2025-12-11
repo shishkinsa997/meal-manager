@@ -25,7 +25,7 @@ html {
 body {
   @include outfit;
   min-height: 100dvh;
-  color: v.$color-light;
+  color: v.$color-dark;
 
   [data-theme="light"] & {
     color: v.$color-black;
@@ -46,7 +46,7 @@ a {
 }
 
 button {
-  all: unset;
+  // all: unset;
   cursor: pointer;
 }
 
@@ -56,6 +56,50 @@ main {
   height: 100dvh;
   gap: 2rem;
 }
+
+table {
+  width: 20rem;
+  // height: 20rem;
+  border: 0.1rem solid black;
+}
+
+tr, td, th {
+  height: 1rem;
+  border: 0.1rem solid black;
+  min-width: 7rem;
+  max-width: 7rem;
+  text-align: center;
+  padding: 0.1rem 0.4rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.form-container {
+  @include flex-column;
+  border: 0.1rem solid black;
+  width: 50rem;
+  gap: 0.5rem;
+}
+
+form {
+  @include flex-between;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+input {
+  max-width: 15rem;
+}
+
+.macros {
+  // width: 10rem;
+  input {
+    max-width: 6rem;
+  }
+}
+
+
 
 [hidden] {
   display: none;
