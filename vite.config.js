@@ -4,7 +4,7 @@ export default defineConfig(({ mode }) => {
   const isDev = mode === "development";
 
   return {
-    base: "/meal-plamer/",
+    base: isDev ? "/" : "/meal-manager/",
     build: {
       outDir: "build",
       emptyOutDir: true,
