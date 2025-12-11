@@ -1,4 +1,4 @@
-# [Deploy](https://github.com/shishkinsa997/meal-manager/deployments/github-pages)
+# [Deploy](https://shishkinsa997.github.io/meal-manager/)
 
 # Техническое задание: Приложение «Менеджер еды и продуктов» (Food & Stock Manager)
 
