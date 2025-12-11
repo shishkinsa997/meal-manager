@@ -1,3 +1,5 @@
+# [Deploy](https://github.com/shishkinsa997/meal-manager/deployments/github-pages)
+
 # Техническое задание: Приложение «Менеджер еды и продуктов» (Food & Stock Manager)
 
 ## 1. Общие положения
